@@ -84,8 +84,8 @@ body {
   max-height: 80vh;
   width: 80vw;
   border-radius: 10px;
-  border: 1px solid rgb(0, 255, 255);
-}
+/*   border: 1px solid rgb(0, 255, 255);
+} */
 
 #container .description {
   color: white;
