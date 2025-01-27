@@ -75,5 +75,5 @@ body {
 /* Allow interactions to pass through to the iframe  */
 #mouse-overlay {
   z-index: 10;
-  /* pointer-events: none; */
-}
+ pointer-events: none;
+} 
