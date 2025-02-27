@@ -24,7 +24,6 @@ function maximizeImage() {
 
     // Create an image element inside the fixed container
     const fixedImage = document.createElement("img");
-    fixedImage.style.height = "100%";
     fixedImage.style.maxWidth = "100%";
     fixedImage.style.maxHeight = "100%";
     fixedImageContainer.appendChild(fixedImage);
