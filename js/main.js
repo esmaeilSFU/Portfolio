@@ -168,7 +168,7 @@ class galaxyParticles {
         resolution: { value: new THREE.Vector4() },
         uColor: { value: new THREE.Color(this.color) },
         uTexture: {
-          value: new THREE.TextureLoader().load("Portfolio/assets/particle0.png"),
+          value: new THREE.TextureLoader().load("particle0.png"),
         },
         opacity: { value: 1 },
       },
