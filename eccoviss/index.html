@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EccoVizz by Esmaeil Mottaghi</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="p5/lib/p5.js"></script>
+    <script src="p5/lib/addons/p5.sound.js"></script>
+  </head>
+  <body>
+    <div class="menu">ECCOVISS</div>
+    <div id="container">
+      <div class="bar" id="leftBar">
+        <div style="height: 40px; color: white; line-height: 40px">Music</div>
+        <div id="musicPanel">
+          <div
+            id="musicSelectionTxt"
+            style="
+              font-size: 0.8rem;
+              color: rgb(255, 255, 255);
+              height: 20px;
+              line-height: 20px;
+            "
+          >
+            Music Selection
+          </div>
+          <div id="musicBtns">
+            <button class="btn" id="m1">1</button>
+            <button class="btn" id="m2">2</button>
+            <button class="btn" id="m3">3</button>
+          </div>
+          <div id="largeBtns">
+            <button class="btn" id="playPauseBtn">Play /Pause</button>
+            <button class="btn" id="stopBtn">Stop</button>
+          </div>
+          <div class="params">
+            <div class="slidecontainer" style="margin: 5px; text-align: left">
+              <p id="vlTxt" style="margin: 0">Volume:</p>
+              <input
+                id="volumeSlider"
+                class="slider"
+                type="range"
+                min="0.1"
+                max="2"
+                value="1"
+                step="0.1"
+              />
+            </div>
+            <div class="slidecontainer" style="margin: 5px; text-align: left">
+              <p id="rtTxt" style="margin: 0">Speed:</p>
+              <input
+                id="rateSlider"
+                class="slider"
+                type="range"
+                min="0"
+                max="2"
+                value="1"
+                step="0.1"
+              />
+            </div>
+            <div id="largeBtns">
+              <button class="btn" id="CnvlvrBtn">ConVolver</button>
+              <button class="btn" id="stopCnvlvrBtn">Stop Convolver</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="canvas"></div>
+      <div class="bar" id="rightBar">
+        <div style="height: 40px; color: white; line-height: 40px">
+          Visualization
+        </div>
+        <div id="visualPanel">
+          <div
+            id="VisualizationTpesTxt"
+            style="
+              font-size: 0.8rem;
+              color: rgb(255, 255, 255);
+              height: 20px;
+              line-height: 20px;
+            "
+          >
+            Visualization types
+          </div>
+          <div id="visualBtns">
+            <button class="btn" id="v1">1</button>
+            <button class="btn" id="v2">2</button>
+            <button class="btn" id="v3">3</button>
+          </div>
+          <div class="params">
+            <div class="slidecontainer" style="margin: 5px; text-align: left">
+              <p id="p1Txt" style="margin: 0">X distance:</p>
+              <input
+                id="p1"
+                class="slider"
+                type="range"
+                min="10"
+                max="50"
+                value="30"
+                step="1"
+              />
+            </div>
+            <div class="slidecontainer" style="margin: 5px; text-align: left">
+              <p id="p2Txt" style="margin: 0">Y distance:</p>
+              <input
+                id="p2"
+                class="slider"
+                type="range"
+                min="10"
+                max="50"
+                value="30"
+                step="1"
+              />
+            </div>
+
+            <ol class="switches">
+              <li>
+                <label for="colorpicker"></label>
+                <input type="color" id="colorpicker" value="#ffd900" />
+              </li>
+              <li>
+                <div
+                  class="slidecontainer"
+                  style="margin: 5px; text-align: left"
+                >
+                  <p id="p3Txt" style="margin: 0">Opacity:</p>
+                  <input
+                    id="p3"
+                    class="slider"
+                    type="range"
+                    min="0"
+                    max="1"
+                    value="0.20"
+                    step="0.01"
+                  />
+                </div>
+              </li>
+              <li>
+                <input type="checkbox" id="mouse" unchecked />
+                <label for="2">
+                  <span>Mouse</span>
+                  <span></span>
+                </label>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tools.js"></script>
+    <script src="patterns.js"></script>
+    <script src="sketch.js"></script>
+    <script src="inspectPrevention.js"></script>
+  </body>
+</html>
