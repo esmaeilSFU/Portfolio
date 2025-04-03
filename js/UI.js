@@ -47,7 +47,7 @@ let parakeetWebElement = document
   .getElementById("parakeetWA")
   .querySelector("button");
 parakeetWebElement.addEventListener("click", (event) => {
-  window.open("ParakeetWeb/index.html", "_blank");
+  window.open("https://esmaeilsfu.github.io/ParakeetWeb/", "_blank");
 });
 let pardisanElement = document
   .getElementById("pardisan")
